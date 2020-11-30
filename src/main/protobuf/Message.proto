@@ -1,0 +1,12 @@
+syntax = "proto3";
+package protobuf;
+
+option java_package = "ru.optimization";
+option java_outer_classname = "Message";
+
+message Message {
+    int64 senderId = 1;
+    int64 recipientId = 2;
+    string textMessage = 3;
+    bool isReceived = 4;
+}
